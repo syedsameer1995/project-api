@@ -5,14 +5,14 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
 	<flow name="get:\products:product-api-config" doc:id="ba9c7ec5-5478-4379-b597-59d9e8c763e2" >
-		<ee:transform doc:name="Copy_of_Transform Message" doc:id="85f4bae0-4d7a-49fb-aff4-7f4898548c58" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd" >
+		<ee:transform doc:name="Transform Message" doc:id="85f4bae0-4d7a-49fb-aff4-7f4898548c58" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
 output application/json
 ---
 {
   productID: "73657487",
-  productName: "Chinna mule course",
+  productName: "Chinna mulesoft course",
   productProvider: "Udemy",
   productDescription: "Complete mule developer course"
 }]]></ee:set-payload>
